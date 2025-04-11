@@ -581,3 +581,101 @@ footer {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-left-color: var(--cyber-green);
 }
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding-top: 8rem;
+  }
+}
+
+/* Code of Conduct styles */
+.coc-section {
+  padding-top: 10rem;
+}
+
+.coc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.coc-intro,
+.coc-examples,
+.coc-escalation,
+.coc-commitment {
+  background: rgba(5, 25, 55, 0.7);
+  border-radius: 8px;
+  padding: 2rem;
+  border-left: 3px solid var(--cyber-blue);
+}
+
+.coc-intro {
+  border-left-color: var(--cyber-green);
+}
+
+.coc-highlight {
+  font-size: 1.3rem;
+  color: var(--cyber-green);
+  background: rgba(0, 255, 143, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.coc-examples h2,
+.coc-escalation h2 {
+  color: var(--cyber-blue);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.coc-list {
+  list-style-type: none;
+  padding-left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+.coc-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.coc-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--cyber-green);
+  font-size: 1.5em;
+}
+
+.escalation-path {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--cyber-green);
+}
+
+.coc-commitment {
+  font-style: italic;
+  background: rgba(0, 191, 255, 0.1);
+  text-align: center;
+}
+
+.coc-commitment p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .coc-section {
+    padding-top: 8rem;
+  }
+
+  .coc-highlight {
+    font-size: 1.1rem;
+  }
+}
